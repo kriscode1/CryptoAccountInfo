@@ -15,6 +15,6 @@ Example output:
     Coin    Price (BTC)     Balance         Value (BTC)     Value (USD)
     ETH     0.06313998      1.11100000      0.07014852 BTC  $1052.73 USD
     XMR     0.02429102      2.22200000      0.05397465 BTC  $810.00 USD
-    Total                   3.33300000 BTC                  $1862.73 USD
+    Total                                   0.12412317 BTC  $1862.73 USD
 
     Open Orders:
