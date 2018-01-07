@@ -117,11 +117,17 @@ for balance in balances:
 	
 	usd_value = btc_value * btc_price
 	if usd_value > 1.00:
-		print("{}\t{:.8f}\t{:.8f}\t{:.8f} BTC\t${:.2f} USD".format(balance['Currency'], last_price, balance['Balance'], btc_value, usd_value))
+		print("{}\t{:.8f} ${:7.2f}\t{:.8f}\t{:.8f} BTC\t${:7.2f} USD".format(
+			balance['Currency'], 
+			last_price, 
+			last_price * btc_price,
+			balance['Balance'], 
+			btc_value, 
+			usd_value))
 		total_btc += btc_value
 		total_usd += usd_value
 
-print("Total\t{:10}\t{:.8f} BTC\t\t\t${:.2f} USD".format("", total_btc, total_usd))
+print("Total\t{0:10}  {0:7}\t{0:10}\t{1:.8f} BTC\t${2:7.2f} USD".format("", total_btc, total_usd))
 
 print("")
 print("Open Orders:")
